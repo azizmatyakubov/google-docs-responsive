@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: red;
+    height: 50px;
+}
+
+button {
+    margin-right: 5px;
+}
+
+/* .text-output {
+    width: 200px;
+    max-width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+
+} */
