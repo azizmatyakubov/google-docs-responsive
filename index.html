@@ -36,7 +36,7 @@
 
       <div class="row text-center">
         <div class="col-sm-12">
-          <button type="button" id="bold" class="btn bg-light">Bold</button>
+        <button onclick="makeBold()" type="button" id="bold" class="btn bg-light">Bold</button>
           <button type="button" id="italic" class="btn bg-light">Italic</button>
           <button type="button" id="underline" class="btn bg-light">
             Underline
@@ -50,21 +50,19 @@
         <div class="form-group">
           <div class="row">
             <div class="col-md-6 sm-12">
-              <label for="Textarea1"></label>
+            <label for="Textarea1">Your text</label>
               <textarea
                 class="form-control"
                 id="exampleFormControlTextarea1"
                 rows="12"
                 placeholder="Write Something here...."
+                onkeydown="updateText()"
               ></textarea>
             </div>
             <div class="col-md-6 ">
-                <label for="Textarea2"></label>
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="12"
-                ></textarea>
+                <label for="text-input">Formatted Text</label>
+                <div id="text-output" class="text-output bg-light">
+                </div>
               </div>
             </div>
           </div>
@@ -75,6 +73,7 @@
           <button type="button" class="btn btn-secondary btn-lg shadow-lg p-3 rounded">GoogleDoc Button</button>
         </div>
     
+
         <footer class="page-footer container mt-5">
         <div class="footer-copyright text-center py-3">© 2022 Copyright:
           <a href="https://google.com/"> GoogleDoc</a>
@@ -89,7 +88,7 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
-
+            <script src="script.js"></script>
 
 
   </body>
