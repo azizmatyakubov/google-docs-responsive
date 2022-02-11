@@ -9,3 +9,7 @@ const makeBold = () => {
     textBold.classList.add("bold");
 }
 
+const makeAlign = (alignType) => {
+    document.getElementById('text-output').style.textAlign = alignType  
+    let buttonList = document.getElementsByClassName('align')
+}
